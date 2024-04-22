@@ -1,0 +1,6 @@
+name: app_environment
+channels:
+  - snowflake
+dependencies:
+  - matplotlib=3.7.2
+  - plotly=5.19.0
