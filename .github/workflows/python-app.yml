@@ -46,13 +46,8 @@ jobs:
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_FIRST_NB();"
     - name: Test Notebook - Visual Data Stories
       run: |
-<<<<<<< HEAD
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_VISUAL_NB();"    
     - name: Test Notebook - Ingest Public JSON
-=======
-        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_VISUAL_NB();"
-    - name: Test Notebook - Telco Churn Data Analysis
->>>>>>> origin/main
       run: |
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_PUBLIC_JSON_NB();"
     - name: Test Notebook - Load CSV from S3
@@ -67,9 +62,3 @@ jobs:
     - name: Test Notebook - Cortex ML Function
       run: |
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CORTEX_MLFUNC_NB();"
-<<<<<<< HEAD
-    - name: Test Notebook - Telco Churn Data Analysis
-      run: |
-        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_TELCO_NB();"
-=======
->>>>>>> origin/main
