@@ -59,6 +59,12 @@ jobs:
     - name: Test Notebook - Hyperparameter Tuning with sklearn
       run: |
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_SKLEARN_NB();"
+    - name: Test Notebook - Import from Stage
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_STAGE_IMPORT_NB();"
+    - name: Test Notebook - Create Objects with Python API
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_PYTHONAPI_NB();"
     - name: Test Notebook - Cortex ML Function
       run: |
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CORTEX_MLFUNC_NB();"
