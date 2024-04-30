@@ -1,6 +1,20 @@
 # Snowflake Notebook Demos
 
-This repo contains a collection of Snowflake Notebook demos, tutorials, and examples. Browse each folder to access the notebook files associated with each demo. The demos can also be found in [Snowflake Quickstarts](https://quickstarts.snowflake.com/) and [Solution Center](https://developers.snowflake.com/solutions/).
+This repo contains a collection of Snowflake Notebook demos, tutorials, and examples. Browse each folder to access the notebook files associated with each demo. The demos can also be found in [Snowflake Quickstarts](https://quickstarts.snowflake.com/) and [Solution Center](https://developers.snowflake.com/solutions/). Below is the list of notebooks you can find in this repo:
+
+
+|  | Notebook | Video | Topics |
+|---|---|---|---|
+| My First Notebook Project | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/My%20First%20Notebook%20Project/My%20First%20Notebook%20Project.ipynb) | [Link](https://www.youtube.com/watch?v=tpg35YgA9Gk) | Using Notebooks |
+| Visual Data Stories With Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Visual%20Data%20Stories%20with%20Snowflake%20Notebooks/Visual%20Data%20Stories%20with%20Snowflake%20Notebooks.ipynb) | [Link](https://www.youtube.com/watch?v=WJUNTudCsYM) | Using Notebooks, Data Science, Python |
+| Data Analysis and Churn Prediction using Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Telco%20Churn%20Data%20Analysis/Telco%20Churn%20Data%20Analysis.ipynb) | [Link](https://www.youtube.com/watch?v=eqb5RdmpW8c) | Data Science, Python |
+| Manage Your Database Like A Pro | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Manage%20Your%20Database%20Like%20A%20Pro/Manage%20Your%20Database%20Like%20A%20Pro.ipynb) | [Link](https://www.youtube.com/watch?v=Dj8aAoEOfrw) | Data Engineering, SQL |
+| Data Engineering Pipelines with Snowpark Python | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Data%20Engineering%20Pipelines%20with%20Snowpark%20Python/Data%20Engineering%20Pipelines%20with%20Snowpark%20Python.ipynb) | - | Data Engineering, Python |
+| Creating Snowflake Object using Python API | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Creating%20Snowflake%20Object%20using%20Python%20API/Creating%20Snowflake%20Object%20using%20Python%20API.ipynb) | - | Data Engineering, Python |
+| Import Custom Package from Stage into Notebook | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Import%20Package%20from%20Stage/Import%20Package%20from%20Stage.ipynb) | - | Using Notebooks |
+| Hyperparameter Tuning with sklearn | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Hyperparameter%20Tuning%20with%20sklearn/Hyperparameter%20Tuning%20with%20sklearn.ipynb) | - | ML, Python |
+| How to work with Files in Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Working%20with%20Files/Working%20with%20Files.ipynb) | - | Using Notebooks |
+| Getting Started with Snowflake Cortex ML-Based Functions | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions.ipynb) | - | ML, SQL |
 
 ## Load demo notebooks to Snowflake
 
