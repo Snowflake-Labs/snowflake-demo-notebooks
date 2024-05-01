@@ -1,0 +1,7 @@
+name: app_environment  
+channels:  
+  - snowflake  
+dependencies:  
+  - matplotlib=3.7.2  
+  - seaborn=0.12.2  
+  - snowflake-ml-python=1.4.0
