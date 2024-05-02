@@ -30,30 +30,30 @@ jobs:
     - name: Fetch the latest update from Github
       run: |
         snow sql -q "ALTER GIT REPOSITORY SFLAB_DEMO_NB FETCH;"
-    # - name: Test Notebook - My First Notebook Project
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_FIRST_NB();"
-    # - name: Test Notebook - Visual Data Stories
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_VISUAL_NB();"    
-    # - name: Test Notebook - Ingest Public JSON
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_PUBLIC_JSON_NB();"
-    # - name: Test Notebook - Load CSV from S3
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CSV_S3_NB();"
-    # - name: Test Notebook - Working with Files
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_FILES_NB();"
-    # - name: Test Notebook - Hyperparameter Tuning with sklearn
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_SKLEARN_NB();"
-    # - name: Test Notebook - Import from Stage
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_STAGE_IMPORT_NB();"
-    # - name: Test Notebook - Create Objects with Python API
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_PYTHONAPI_NB();"
-    # - name: Test Notebook - Cortex ML Function
-    #   run: |
-    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CORTEX_MLFUNC_NB();"
+    - name: Test Notebook - My First Notebook Project
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_FIRST_NB();"
+    - name: Test Notebook - Visual Data Stories
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_VISUAL_NB();"    
+    - name: Test Notebook - Ingest Public JSON
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_PUBLIC_JSON_NB();"
+    - name: Test Notebook - Load CSV from S3
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CSV_S3_NB();"
+    - name: Test Notebook - Working with Files
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_FILES_NB();"
+    - name: Test Notebook - Hyperparameter Tuning with sklearn
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_SKLEARN_NB();"
+    - name: Test Notebook - Import from Stage
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_STAGE_IMPORT_NB();"
+    - name: Test Notebook - Create Objects with Python API
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_PYTHONAPI_NB();"
+    - name: Test Notebook - Cortex ML Function
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CORTEX_MLFUNC_NB();"
