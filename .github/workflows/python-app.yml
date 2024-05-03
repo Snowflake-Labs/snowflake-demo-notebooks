@@ -57,3 +57,14 @@ jobs:
     - name: Test Notebook - Cortex ML Function
       run: |
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CORTEX_MLFUNC_NB();"
+    - name: Test Notebook - End-to-End Machine Learning with Snowpark ML
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_SPML1_NB();"
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_SPML2_NB();"
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_SPML3_NB();"
+    # - name: Test Notebook - Create and Manage Snowflake Objects like a Pro
+    #   run: |
+    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_PRO_NB();"
+    - name: Test Notebook - Data Engineering Pipelines with Snowpark Python
+      run: |
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_DE_SNOWPARK_NB();"
