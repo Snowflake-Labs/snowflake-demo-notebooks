@@ -17,6 +17,7 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
 | How to work with Files in Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Working%20with%20Files/Working%20with%20Files.ipynb) | - | Using Notebooks |
 | How to Ingest JSON Data from Public Endpoint | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Ingest%20Public%20JSON/Ingest%20Public%20JSON.ipynb) | - | Data Science |
 | How to load CSV files from S3 stage | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Load%20CSV%20from%20S3/Load%20CSV%20from%20S3.ipynb) | - | Data Science |
+| Access External Endpoints | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Access%20External%20Endpoints/Access%20External%20Endpoints.ipynb) | - |  |
 | Getting Started with Snowflake Cortex ML-Based Functions | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions.ipynb) | - | ML, SQL |
 
 ## Load demo notebooks to Snowflake
