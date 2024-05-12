@@ -18,4 +18,4 @@ CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION gh_access_integration
   ALLOWED_NETWORK_RULES = (gh_network_rule)
   ENABLED = true;
 
-ALTER NOTEBOOK GH_ACTION_EAI_SETUP set EXTERNAL_ACCESS_INTEGRATIONS = (hf_access_integration, gh_access_integration);
+ALTER NOTEBOOK GH_ACTION_EAI_NB set EXTERNAL_ACCESS_INTEGRATIONS = (hf_access_integration, gh_access_integration);
