@@ -12,7 +12,7 @@ CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION hf_access_integration
 CREATE OR REPLACE NETWORK RULE gh_network_rule
   MODE = EGRESS
   TYPE = HOST_PORT
-  VALUE_LIST = ('raw.githubusercontent.com','github.com');
+  VALUE_LIST = ('raw.githubusercontent.com', 'githubusercontent.com','github.com');
 
 CREATE OR REPLACE EXTERNAL ACCESS INTEGRATION gh_access_integration
   ALLOWED_NETWORK_RULES = (gh_network_rule)
