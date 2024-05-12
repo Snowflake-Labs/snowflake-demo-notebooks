@@ -55,6 +55,12 @@ jobs:
         snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_FILES_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Working with Files/' MAIN_FILE = 'Working with Files.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
         snow sql -q "ALTER NOTEBOOK GH_ACTION_FILES_NB ADD LIVE VERSION FROM LAST;"
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_FILES_NB();"
+    - name:  Test Notebook - Access External Endpoints
+      run: |
+        snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_EAI_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Access External Endpoints/' MAIN_FILE = 'Access External Endpoints.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
+        snow sql -q "ALTER NOTEBOOK GH_ACTION_EAI_NB ADD LIVE VERSION FROM LAST;"
+        snow sql -q "EXECUTE IMMEDIATE FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Access External Endpoints/setup.sql';"
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_EAI_NB();" 
     - name: Test Notebook - Hyperparameter Tuning with sklearn
       run: |
         snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_SKLEARN_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Hyperparameter Tuning with sklearn/' MAIN_FILE = 'Hyperparameter Tuning with sklearn.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
