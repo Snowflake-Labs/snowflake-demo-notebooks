@@ -17,7 +17,7 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
 | How to work with Files in Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Working%20with%20Files/Working%20with%20Files.ipynb) | - | Using Notebooks |
 | How to Ingest JSON Data from Public Endpoint | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Ingest%20Public%20JSON/Ingest%20Public%20JSON.ipynb) | - | Data Science |
 | How to load CSV files from S3 stage | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Load%20CSV%20from%20S3/Load%20CSV%20from%20S3.ipynb) | - | Data Science |
-| Access External Endpoints | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Access%20External%20Endpoints/Access%20External%20Endpoints.ipynb) | - |  |
+| Access External Endpoints | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Access%20External%20Endpoints/Access%20External%20Endpoints.ipynb) | - | Using Notebooks |
 | Getting Started with Snowflake Cortex ML-Based Functions | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions.ipynb) | - | ML, SQL |
 
 ## Load demo notebooks to Snowflake
@@ -35,3 +35,19 @@ The notebook files are available for download as `.ipynb` files. To load the dem
 4. Select the file from your local directory and press `Open`.
 
 5. A `Create Notebook` dialog will show up. Select a database, schema, and warehouse for the Notebook and click `Create`.
+
+## Resources
+
+Here are some resources to learn more about Snowflake Notebooks:
+
+* [Documentation](https://docs.snowflake.com/LIMITEDACCESS/snowsight-notebooks/ui-snowsight-notebooks-about)
+* [Youtube Playlist](https://www.youtube.com/playlist?list=PLavJpcg8cl1Efw8x_fBKmfA2AMwjUaeBI)
+* Notebook Use[Solution Center](https://developers.snowflake.com/solutions/?_sft_technology=notebooks)
+
+## License
+
+All code and notebooks included in this repo is available with an Apache 2.0 license.
+
+## Other links
+
+* Interested in developing and running interactive Streamlit apps in Snowflake? Check out the [Streamlit in Snowflake Demo Repo](https://github.com/Snowflake-Labs/snowflake-demo-streamlit/) to learn more!
