@@ -1,6 +1,6 @@
 # Snowflake Notebook Demos
 
-This repo contains a collection of Snowflake Notebook demos, tutorials, and examples. Browse each folder to access the notebook files associated with each demo. The demos can also be found in [Snowflake Quickstarts](https://quickstarts.snowflake.com/) and [Solution Center](https://developers.snowflake.com/solutions/). Below is the list of notebooks you can find in this repo:
+This repo contains a collection of Snowflake Notebook demos, tutorials, and examples. Browse each folder to access the notebook files associated with each demo. Below is the list of notebooks you can find in this repo:
 
 
 |  | Notebook | Video | Topics |
@@ -41,8 +41,8 @@ The notebook files are available for download as `.ipynb` files. To load the dem
 Here are some resources to learn more about Snowflake Notebooks:
 
 * [Documentation](https://docs.snowflake.com/LIMITEDACCESS/snowsight-notebooks/ui-snowsight-notebooks-about)
-* [Youtube Playlist](https://www.youtube.com/playlist?list=PLavJpcg8cl1Efw8x_fBKmfA2AMwjUaeBI)
-* Notebook Use[Solution Center](https://developers.snowflake.com/solutions/?_sft_technology=notebooks)
+* [YouTube Playlist](https://www.youtube.com/playlist?list=PLavJpcg8cl1Efw8x_fBKmfA2AMwjUaeBI)
+* [Solution Center](https://developers.snowflake.com/solutions/?_sft_technology=notebooks)
 
 ## License
 
