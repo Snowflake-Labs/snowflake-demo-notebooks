@@ -1,4 +1,5 @@
 # Snowflake Notebook Demos
+Snowflake Notebooks is your familiar, interactive development environment to perform Data Science, Data Engineering, and AI/ML workloads end-to-end in Snowflake. Write Python & SQL in the same interface.
 
 This repo contains a collection of Snowflake Notebook demos, tutorials, and examples. Browse each folder to access the notebook files associated with each demo. Below is the list of notebooks you can find in this repo:
 
