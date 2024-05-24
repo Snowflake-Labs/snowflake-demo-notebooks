@@ -16,6 +16,7 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
 | Import Custom Package from Stage into Notebook | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Import%20Package%20from%20Stage/Import%20Package%20from%20Stage.ipynb) | - | Using Notebooks |
 | Hyperparameter Tuning with sklearn | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Hyperparameter%20Tuning%20with%20sklearn/Hyperparameter%20Tuning%20with%20sklearn.ipynb) | - | Machine Learning, Python |
 | How to work with Files in Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Working%20with%20Files/Working%20with%20Files.ipynb) | - | Using Notebooks |
+| Navigating and Browsing Files in Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Navigating%20and%20Browsing%20Files/Navigating%20and%20Browsing%20Files.ipynb) | - | Using Notebooks |
 | How to Ingest JSON Data from Public Endpoint | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Ingest%20Public%20JSON/Ingest%20Public%20JSON.ipynb) | - | Data Science |
 | How to load CSV files from S3 stage | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Load%20CSV%20from%20S3/Load%20CSV%20from%20S3.ipynb) | - | Data Science |
 | Access External Endpoints | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Access%20External%20Endpoints/Access%20External%20Endpoints.ipynb) | - | Using Notebooks |
