@@ -50,6 +50,11 @@ jobs:
         snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_CSV_S3_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Load CSV from S3/' MAIN_FILE = 'Load CSV from S3.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
         snow sql -q "ALTER NOTEBOOK GH_ACTION_CSV_S3_NB ADD LIVE VERSION FROM LAST;"
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CSV_S3_NB();"
+    - name: Test Notebook - Reference cells and variables
+      run: |
+        snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_CELLREF_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Reference cells and variables/' MAIN_FILE = 'Reference cells and variables.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
+        snow sql -q "ALTER NOTEBOOK GH_ACTION_CELLREF_NB ADD LIVE VERSION FROM LAST;"
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_CELLREF_NB();"
     - name: Test Notebook - Working with Files
       run: |
         snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_FILES_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Working with Files/' MAIN_FILE = 'Working with Files.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
