@@ -1,27 +1,101 @@
 # Snowflake Notebook Demos
 Snowflake Notebooks is your familiar, interactive development environment to perform Data Science, Data Engineering, and AI/ML workloads end-to-end in Snowflake. Write Python & SQL in the same interface.
 
-This repo contains a collection of Snowflake Notebook demos, tutorials, and examples. Browse each folder to access the notebook files associated with each demo. Below is the list of notebooks you can find in this repo:
+This repo contains a collection of Snowflake Notebook demos, tutorials, and examples. Browse each folder to access the notebook files associated with each demo. 
+See the list of notebooks you can find in this repo.
+
+<div style="display: flex; flex-wrap: wrap;">
+
+<!-- Getting Started -->
+<div style="flex: 50%; padding: 0 15px;">
+    <h3>Getting Started</h3>
+    <!-- Image Column -->
+    <div style="float: left; width: 15%; padding: 0 15px;">
+        <img src="https://docs.snowflake.com/_images/create-sf-notebooks-tile.png" alt="Image" style="max-width: 100%;">
+    </div>
+    <!-- List Column -->
+    <div style="float: right; width: 75%; padding: 0 15px;">
+        <ul>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/My%20First%20Notebook%20Project/My%20First%20Notebook%20Project.ipynb">My First Notebook Project</a></strong> <a href="https://www.youtube.com/watch?v=tpg35YgA9Gk">🎥</a></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Visual%20Data%20Stories%20with%20Snowflake%20Notebooks/Visual%20Data%20Stories%20with%20Snowflake%20Notebooks.ipynb">Visual Data Stories With Snowflake Notebooks</a></strong> <a href="https://www.youtube.com/watch?v=WJUNTudCsYM">🎥</a></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Reference%20cells%20and%20variables/Reference%20cells%20and%20variables.ipynb">Reference cells and variables</a></strong></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Data Science -->
+<div style="flex: 50%; padding: 0 15px;">
+    <h3>Data Science</h3>
+    <!-- Image Column -->
+    <div style="float: left; width: 15%; padding: 0 15px;">
+        <img src="https://docs.snowflake.com/_images/data-science-notebooks-tile.png" alt="Image" style="max-width: 100%;">
+    </div>
+    <!-- List Column -->
+    <div style="float: right; width: 75%; padding: 0 15px;">
+        <ul>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Telco%20Churn%20Data%20Analysis/Telco%20Churn%20Data%20Analysis.ipynb">Data Analysis and Churn Prediction using Snowflake Notebooks</a></strong> <a href="https://www.youtube.com/watch?v=eqb5RdmpW8c">🎥</a></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Ingest%20Public%20JSON/Ingest%20Public%20JSON.ipynb">How to Ingest JSON Data from Public Endpoint</a></strong></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Load%20CSV%20from%20S3/Load%20CSV%20from%20S3.ipynb">How to load CSV files from S3 stage</a></strong></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Data Engineering -->
+<div style="flex: 50%; padding: 0 15px;">
+    <h3>Data Engineering</h3>
+    <!-- Image Column -->
+    <div style="float: left; width: 15%; padding: 0 15px;">
+        <img src="https://docs.snowflake.com/_images/data-eng-notebooks-tile.png" alt="Image" style="max-width: 100%;">
+    </div>
+    <!-- List Column -->
+    <div style="float: right; width: 75%; padding: 0 15px;">
+        <ul>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Create%20and%20Manage%20Snowflake%20Objects%20Like%20a%20Pro/Create%20and%20Manage%20Snowflake%20Objects%20Like%20a%20Pro.ipynb">Create and Manage Snowflake Objects Like a Pro</a></strong> <a href="https://www.youtube.com/watch?v=Dj8aAoEOfrw">🎥</a></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Data%20Engineering%20Pipelines%20with%20Snowpark%20Python/Data%20Engineering%20Pipelines%20with%20Snowpark%20Python.ipynb">Data Engineering Pipelines with Snowpark Python</a></strong> <a href="https://www.youtube.com/watch?v=mpstEt0fU8U">🎥</a></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Creating%20Snowflake%20Object%20using%20Python%20API/Creating%20Snowflake%20Object%20using%20Python%20API.ipynb">Creating Snowflake Object using Python API</a></strong></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Machine Learning -->
+<div style="flex: 50%; padding: 0 15px;">
+    <h3>Machine Learning</h3>
+    <!-- Image Column -->
+    <div style="float: left; width: 15%; padding: 0 15px;">
+        <img src="https://docs.snowflake.com/_images/ml-notebooks-tile.png" alt="Image" style="max-width: 100%;">
+    </div>
+    <!-- List Column -->
+    <div style="float: right; width: 75%; padding: 0 15px;">
+        <ul>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/tree/main/End-to-End%20Machine%20Learning%20with%20Snowpark%20ML">End-to-End Machine Learning with Snowpark ML</a></strong> <a href="https://www.youtube.com/watch?v=LeSGBW0YoLg">🎥</a></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Hyperparameter%20Tuning%20with%20sklearn/Hyperparameter%20Tuning%20with%20sklearn.ipynb">Hyperparameter Tuning with sklearn</a></strong></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions.ipynb">Getting Started with Snowflake Cortex ML-Based Functions</a></strong></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Using Notebooks -->
+<div style="flex: 50%; padding: 0 15px;">
+    <h3>Using Notebooks</h3>
+    <!-- Image Column -->
+    <div style="float: left; width: 15%; padding: 0 15px;">
+        <img src="https://docs.snowflake.com/_images/develop-sf-notebooks-tile.png" alt="Image" style="max-width: 100%;">
+    </div>
+    <!-- List Column -->
+    <div style="float: right; width: 75%; padding: 0 15px;">
+        <ul>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Import%20Package%20from%20Stage/Import%20Package%20from%20Stage.ipynb">Import Custom Package from Stage into Notebook</a></strong></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Working%20with%20Files/Working%20with%20Files.ipynb">How to work with Files in Snowflake Notebooks</a></strong></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Navigating%20and%20Browsing%20Files/Navigating%20and%20Browsing%20Files.ipynb">Navigating and Browsing Files in Snowflake Notebooks</a></strong></li>
+            <li><strong><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Access%20External%20Endpoints/Access%20External%20Endpoints.ipynb">Access External Endpoints</a></strong></li>
+        </ul>
+    </div>
+</div>
+
+</div>
 
 
-|  | Notebook | Video | Topics |
-|---|---|---|---|
-| My First Notebook Project | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/My%20First%20Notebook%20Project/My%20First%20Notebook%20Project.ipynb) | [Link](https://www.youtube.com/watch?v=tpg35YgA9Gk) | Using Notebooks |
-| Visual Data Stories With Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Visual%20Data%20Stories%20with%20Snowflake%20Notebooks/Visual%20Data%20Stories%20with%20Snowflake%20Notebooks.ipynb) | [Link](https://www.youtube.com/watch?v=WJUNTudCsYM) | Using Notebooks, Data Science, Python |
-| Data Analysis and Churn Prediction using Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Telco%20Churn%20Data%20Analysis/Telco%20Churn%20Data%20Analysis.ipynb) | [Link](https://www.youtube.com/watch?v=eqb5RdmpW8c) | Data Science, Python |
-| Create and Manage Snowflake Objects Like a Pro | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Create%20and%20Manage%20Snowflake%20Objects%20Like%20a%20Pro/Create%20and%20Manage%20Snowflake%20Objects%20Like%20a%20Pro.ipynb) | [Link](https://www.youtube.com/watch?v=Dj8aAoEOfrw) | Data Engineering, SQL |
-| Data Engineering Pipelines with Snowpark Python | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Data%20Engineering%20Pipelines%20with%20Snowpark%20Python/Data%20Engineering%20Pipelines%20with%20Snowpark%20Python.ipynb) | [Link](https://www.youtube.com/watch?v=mpstEt0fU8U) | Data Engineering, Python |
-| End-to-End Machine Learning with Snowpark ML | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/tree/main/End-to-End%20Machine%20Learning%20with%20Snowpark%20ML) | [Link](https://www.youtube.com/watch?v=LeSGBW0YoLg) | Machine Learning, Python |
-| Creating Snowflake Object using Python API | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Creating%20Snowflake%20Object%20using%20Python%20API/Creating%20Snowflake%20Object%20using%20Python%20API.ipynb) | - | Data Engineering, Python |
-| Import Custom Package from Stage into Notebook | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Import%20Package%20from%20Stage/Import%20Package%20from%20Stage.ipynb) | - | Using Notebooks |
-| Reference cells and variables | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Reference%20cells%20and%20variables/Reference%20cells%20and%20variables.ipynb) | - | Using Notebooks |
-| Hyperparameter Tuning with sklearn | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Hyperparameter%20Tuning%20with%20sklearn/Hyperparameter%20Tuning%20with%20sklearn.ipynb) | - | Machine Learning, Python |
-| How to work with Files in Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Working%20with%20Files/Working%20with%20Files.ipynb) | - | Using Notebooks |
-| Navigating and Browsing Files in Snowflake Notebooks | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Navigating%20and%20Browsing%20Files/Navigating%20and%20Browsing%20Files.ipynb) | - | Using Notebooks |
-| How to Ingest JSON Data from Public Endpoint | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Ingest%20Public%20JSON/Ingest%20Public%20JSON.ipynb) | - | Data Science |
-| How to load CSV files from S3 stage | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Load%20CSV%20from%20S3/Load%20CSV%20from%20S3.ipynb) | - | Data Science |
-| Access External Endpoints | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Access%20External%20Endpoints/Access%20External%20Endpoints.ipynb) | - | Using Notebooks |
-| Getting Started with Snowflake Cortex ML-Based Functions | [Link](https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions.ipynb) | - | ML, SQL |
+
 
 ## Load demo notebooks to Snowflake
 
