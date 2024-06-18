@@ -13,21 +13,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Set up Snowflake connection by putting secrets into config file
-      env:
-        SNOWCLI_CONFIG: ${{secrets.SNOWCLI_CONFIG}}
-      shell: bash
-      run: |
-        echo "$SNOWCLI_CONFIG" > config.toml
-        # Snowflake CLI requires the config.toml file to limit its file permissions to read and write for the file owner only
-        chown $USER config.toml
-        chmod 0600 config.toml
     - name: Snowflake CLI installation
       uses: Snowflake-Labs/snowflake-cli-action@v1
       with:
         cli-version: "latest"
-        default-config-file-path: "config.toml"
-    - name: Fetch the latest update from Github
+        # default-config-file-path: "config.toml"
+    - name: Set up Snowflake connection by putting secrets into config file
+      env:
+        # SNOWCLI_CONFIG: ${{secrets.SNOWCLI_CONFIG}}
+        SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+        SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_USER }}
+        SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+        SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
+        SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
+        SNOWFLAKE_DATABASE: ${{ secrets.SNOWFLAKE_DATABASE }}
+        SNOWFLAKE_SCHEMA: ${{ secrets.SNOWFLAKE_SCHEMA }}
+      shell: bash
       run: |
         snow sql -q "ALTER GIT REPOSITORY SFLAB_DEMO_NB FETCH;"
     - name: Test Notebook - My First Notebook Project
