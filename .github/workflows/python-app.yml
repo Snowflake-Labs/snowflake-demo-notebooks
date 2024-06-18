@@ -18,7 +18,7 @@ jobs:
         SNOWCLI_CONFIG: ${{secrets.SNOWCLI_CONFIG}}
       shell: bash
       run: |
-        echo "$SNOWCLI_CONFIG" > config.toml
+        echo -e "$SNOWCLI_CONFIG" > config.toml
         # Snowflake CLI requires the config.toml file to limit its file permissions to read and write for the file owner only
         chown $USER config.toml
         chmod 0600 config.toml

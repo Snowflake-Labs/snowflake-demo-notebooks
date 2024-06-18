@@ -2,4 +2,4 @@ name: app_environment
 channels:
   - snowflake
 dependencies:
-  - snowflake=0.6.0
+  - snowflake=0.8.0
