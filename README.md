@@ -36,7 +36,7 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
     <td style="vertical-align: top;">
       <h4>Data Engineering</h4>
       <ul>
-        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Create%20and%20Manage%20Snowflake%20Objects%20Like%20a%20Pro/Create%20and%20Manage%20Snowflake%20Objects%20Like%20a%20Pro.ipynb">Create and Manage Snowflake Objects Like a Pro</a> <a href="https://www.youtube.com/watch?v=Dj8aAoEOfrw">🎥</a></li>
+        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Create%20and%20Manage%20Snowflake%20Objects%20like%20a%20Pro/Create%20and%20Manage%20Snowflake%20Objects%20like%20a%20Pro.ipynb">Create and Manage Snowflake Objects Like a Pro</a> <a href="https://www.youtube.com/watch?v=Dj8aAoEOfrw">🎥</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Data%20Engineering%20Pipelines%20with%20Snowpark%20Python/Data%20Engineering%20Pipelines%20with%20Snowpark%20Python.ipynb">Data Engineering Pipelines with Snowpark Python</a> <a href="https://www.youtube.com/watch?v=mpstEt0fU8U">🎥</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Creating%20Snowflake%20Object%20using%20Python%20API/Creating%20Snowflake%20Object%20using%20Python%20API.ipynb">Creating Snowflake Object using Python API</a></li>
       </ul>
