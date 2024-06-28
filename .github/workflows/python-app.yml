@@ -111,6 +111,11 @@ jobs:
         snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_SPML3_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/End-to-End Machine Learning with Snowpark ML/' MAIN_FILE = '3_sf_nb_snowpark_ml_model_training_inference.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
         snow sql -q "ALTER NOTEBOOK GH_ACTION_SPML3_NB ADD LIVE VERSION FROM LAST;"
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_SPML3_NB();"
+    - name: Test Notebook - Intro to Snowpark pandas
+      run: |
+        snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_PANDAS_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Intro to Snowpark pandas/' MAIN_FILE = 'Intro to Snowpark pandas.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
+        snow sql -q "ALTER NOTEBOOK GH_ACTION_PANDAS_NB ADD LIVE VERSION FROM LAST;"
+        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_PANDAS_NB();"
     - name: Test Notebook - Data Engineering Pipelines with Snowpark Python
       run: |
         snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_DE_SNOWPARK_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Data Engineering Pipelines with Snowpark Python/' MAIN_FILE = 'Data Engineering Pipelines with Snowpark Python.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
