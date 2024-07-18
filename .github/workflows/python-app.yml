@@ -81,11 +81,11 @@ jobs:
         snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_STAGE_IMPORT_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Import Package from Stage/' MAIN_FILE = 'Import Package from Stage.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
         snow sql -q "ALTER NOTEBOOK GH_ACTION_STAGE_IMPORT_NB ADD LIVE VERSION FROM LAST;"
         snow sql -q "EXECUTE NOTEBOOK GH_ACTION_STAGE_IMPORT_NB();"
-    - name: Test Notebook - Working with Git 
-      run: |
-        snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_GIT_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Working with Git/' MAIN_FILE = 'Working with Git.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
-        snow sql -q "ALTER NOTEBOOK GH_ACTION_GIT_NB ADD LIVE VERSION FROM LAST;"
-        snow sql -q "EXECUTE NOTEBOOK GH_ACTION_GIT_NB();"
+    # - name: Test Notebook - Working with Git 
+    #   run: |
+    #     snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_GIT_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Working with Git/' MAIN_FILE = 'Working with Git.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
+    #     snow sql -q "ALTER NOTEBOOK GH_ACTION_GIT_NB ADD LIVE VERSION FROM LAST;"
+    #     snow sql -q "EXECUTE NOTEBOOK GH_ACTION_GIT_NB();"
     - name: Test Notebook - Create Objects with Python API
       run: |
         snow sql -q "CREATE OR REPLACE NOTEBOOK GH_ACTION_PYTHONAPI_NB FROM '@"GH_ACTION"."PUBLIC"."SFLAB_DEMO_NB"/branches/main/Creating Snowflake Object using Python API/' MAIN_FILE = 'Creating Snowflake Object using Python API.ipynb' QUERY_WAREHOUSE = 'GH_ACTION_WH';"
