@@ -52,6 +52,10 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/tree/main/End-to-End%20Machine%20Learning%20with%20Snowpark%20ML">End-to-End Machine Learning with Snowpark ML</a> <a href="https://www.youtube.com/watch?v=LeSGBW0YoLg">🎥</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Hyperparameter%20Tuning%20with%20sklearn/Hyperparameter%20Tuning%20with%20sklearn.ipynb">Hyperparameter Tuning with sklearn</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions/Getting%20Started%20with%20Snowflake%20Cortex%20ML-Based%20Functions.ipynb">Getting Started with Snowflake Cortex ML-Based Functions</a></li>
+        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Feature%20Store%20Quickstart.ipynb">Feature Store Quickstart</a></li>
+        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Feature%20Store%20API%20Overview.ipynb">Feature Store API Overview</a></li>
+        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/End-to-end%20ML%20with%20Feature%20Store%20and%20Model%20Registry.ipynb">End-to-end ML with Feature Store and Model Registry</a></li>
+        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Manage%20features%20in%20DBT%20with%20Feature%20Store.ipynb">Manage features in DBT with Feature Store</a></li>
       </ul>
     </td>
   </tr>
