@@ -56,7 +56,7 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Feature%20Store%20API%20Overview/Feature%20Store%20API%20Overview.ipynb">Feature Store API Overview</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/End-to-end%20ML%20with%20Feature%20Store%20and%20Model%20Registry/End-to-end%20ML%20with%20Feature%20Store%20and%20Model%20Registry.ipynb">End-to-end ML with Feature Store and Model Registry</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Manage%20features%20in%20DBT%20with%20Feature%20Store/Manage%20features%20in%20DBT%20with%20Feature%20Store.ipynb">Manage features in DBT with Feature Store</a></li>
-        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Manage%20features%20in%20DBT%20with%20Feature%20Store/Manage%20features%20in%20DBT%20with%20Feature%20Store.ipynb">Manage features in DBT with Feature Store</a></li>
+        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/ML%20Lineage%20Workflows/ML%20Lineage%20Workflows.ipynb">ML Lineage Workflows</a></li>
       </ul>
     </td>
   </tr>
