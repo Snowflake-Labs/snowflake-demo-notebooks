@@ -4,4 +4,3 @@ channels:
 dependencies:
   - modin=*
   - pandas=*
-  - snowflake-snowpark-python=*
