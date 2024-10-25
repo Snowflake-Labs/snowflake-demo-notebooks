@@ -1,0 +1,8 @@
+name: app_environment
+channels:
+  - snowflake
+dependencies:
+  - altair=*
+  - numpy=*
+  - pandas=*
+  - scikit-learn=*
