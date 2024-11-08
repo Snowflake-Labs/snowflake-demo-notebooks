@@ -17,22 +17,8 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
     </td>
   </tr>
   <tr>
-    
-    <td style="vertical-align: top;">
-      <img src="https://docs.snowflake.com/_images/data-science-notebooks-tile.png" alt="Image" style="width:100px">
-    </td>
-    <td style="vertical-align: top;">
 
-      <h4>Data Administration</h4>
-      <ul>
-        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/MFA_Audit_of_Users/MFA_Audit_of_Users_with_Streamlit_in_Snowflake_Notebooks.ipynb">MFA Audit of Users with Streamlit in Snowflake Notebooks</a> <a href="https://youtu.be/WojbkHRCiHU">🎥</a></li>
-        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Query_Performance_Insights/Automated_Query_Performance_Insights_in_Snowflake_Notebooks.ipynb">Automated Query Performance Insights in Snowflake Notebooks
-</a><a href="https://youtu.be/h_pb4qdTfzg">🎥</a></li>
-        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Query_Performance_Insights_using_Streamlit/Build_an_Interactive_Query_Performance_App_with_Streamlit.ipynb">Interactive Query Performance App in Snowflake Notebooks using Streamlit</a><a href="https://youtu.be/vdW8xZYBOI0">🎥</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
+
 
     <td style="vertical-align: top;">
       <img src="https://docs.snowflake.com/_images/data-science-notebooks-tile.png" alt="Image" style="width:100px">
