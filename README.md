@@ -40,6 +40,7 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
     <td style="vertical-align: top;">
       <h4>Data Science</h4>
       <ul>
+        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Dashboard_with_Streamlit/Build_a_Dashboard_with_Streamlit_in_Snowflake_Notebooks.ipynb">Dashboard In Snowflake Notebooks Using Streamlit</a> <a href="https://youtu.be/LrQwXQm28qE">🎥</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Telco%20Churn%20Data%20Analysis/Telco%20Churn%20Data%20Analysis.ipynb">Data Analysis and Churn Prediction using Snowflake Notebooks</a> <a href="https://www.youtube.com/watch?v=eqb5RdmpW8c">🎥</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Ingest%20Public%20JSON/Ingest%20Public%20JSON.ipynb">How to Ingest JSON Data from Public Endpoint</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Load%20CSV%20from%20S3/Load%20CSV%20from%20S3.ipynb">How to load CSV files from S3 stage</a></li>
