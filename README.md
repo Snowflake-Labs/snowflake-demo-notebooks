@@ -28,6 +28,7 @@ This repo contains a collection of Snowflake Notebook demos, tutorials, and exam
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Query_Performance_Insights/Automated_Query_Performance_Insights_in_Snowflake_Notebooks.ipynb">Automated Query Performance Insights in Snowflake Notebooks</a> <a href="https://youtu.be/h_pb4qdTfzg">🎥</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Query_Performance_Insights_using_Streamlit/Build_an_Interactive_Query_Performance_App_with_Streamlit.ipynb">Interactive Query Performance App in Snowflake Notebooks using Streamlit</a> <a href="https://youtu.be/vdW8xZYBOI0">🎥</a></li>
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Monitoring_Table_Size_with_Streamlit/Monitoring_Table_Size_with_Streamlit.ipynb">Monitoring the Table Size in Snowflake Notebooks with Streamlit</a> <a href="https://youtu.be/ANlzffewNGk">🎥</a></li>
+        <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Role_Based_Access_Auditing_with_Streamlit/Role_Based_Access_Auditing_with_Streamlit.ipynb">Role-Based Access Auditing in Snowflake Notebooks with Streamlit</a> 
         <li><a href="https://github.com/Snowflake-Labs/snowflake-demo-notebooks/blob/main/Warehouse_Utilization_with_Streamlit/Warehouse_Utilization_with_Streamlit.ipynb">Warehouse Utilization in Snowflake Notebooks with Streamlit</a> <a href="https://youtu.be/fpVAe0BHc7Q">🎥</a></li>
       </ul>
     </td>
