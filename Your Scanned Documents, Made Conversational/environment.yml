@@ -1,0 +1,7 @@
+name: app_environment
+channels:
+  - snowflake
+dependencies:
+  - pillow=*
+  - snowflake=*
+  - tesserocr=*
