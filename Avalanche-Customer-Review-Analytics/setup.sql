@@ -24,6 +24,9 @@ CREATE STAGE IF NOT EXISTS avalanche_db.avalanche_schema.customer_reviews
 -- List the contents of the newly created stage
 ls @avalanche_db.avalanche_schema.customer_reviews;
 
+
+-- USAGE
+-- 
 -- Read single file
 -- Uncomment lines below to use:
 --
