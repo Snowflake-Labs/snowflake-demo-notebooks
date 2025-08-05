@@ -15,8 +15,8 @@ pip install snowflake-ml-python
 
 ### Prerequisites
 
-1. Create a Compute Pool [link](https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/container#create-a-compute-pool)
-2. Create a Image Repository [link](https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/container#create-an-image-repository)
+1. [Create a Compute Pool](https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/container#create-a-compute-pool)
+2. [Create an Image Repository](https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/container#create-an-image-repository)
 
 ## Examples
 
