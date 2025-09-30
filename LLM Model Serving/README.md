@@ -24,4 +24,4 @@ pip install snowflake-ml-python
 
 Examples showcasing how Model Serving can be used from a notebook environment like Jupyter or Snowflake Notebook.
 
-- [llama_model_quickstart](./LLAMA_MODEL_QUICKSTART.ipynb) - log a LLaMa model and serve using SPCS.
+- [Med Gemma Quickstart Notebook](./med_gemma.ipynb) - log a MedGemma model and serve using SPCS.
