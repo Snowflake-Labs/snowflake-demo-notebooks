@@ -122,7 +122,7 @@ The dataset is composed of two main parts:
   </tr>
 </table>
 
-## 🛠️ Key Technologies
+## 🛠️ Tech Stack
 
 - **Snowpark**: Distributed data processing
 - **Modin**: High-performance pandas alternative
