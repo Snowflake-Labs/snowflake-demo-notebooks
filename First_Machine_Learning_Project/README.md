@@ -2,6 +2,8 @@
 
 A comprehensive end-to-end machine learning project for bear species classification using Snowflake's data platform and ML tools.
 
+*This project is designed for learners who want to understand the complete machine learning lifecycle using modern cloud-native tools and platforms.*
+
 ## 🐻 What is this project about?
 
 This project demonstrates how to build a complete machine learning project for classifying bear species using physical characteristics and image analysis. The project is structured as a 5-part learning journey that covers the entire ML lifecycle from data ingestion to model deployment.
@@ -100,5 +102,3 @@ By completing this project, you will have:
 - [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
 - [Altair Visualization](https://altair-viz.github.io/)
 - [Streamlit Documentation](https://docs.streamlit.io/)
-
-*This project is designed for learners who want to understand the complete machine learning lifecycle using modern cloud-native tools and platforms.*
