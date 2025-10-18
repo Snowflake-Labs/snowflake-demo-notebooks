@@ -76,6 +76,52 @@ The project uses a bear species classification dataset containing:
 - **Image data**: Corresponding bear images for AI-powered feature extraction
 - **Extracted features**: Fur color, facial profile, and paw pad texture using Snowflake Cortex AI
 
+The dataset is composed of two main parts:
+
+1. Tabular Data (`bear_raw_data.csv`): The first portion of the data contains physical measurements for each bear as expressed by the columns as follows:
+
+| Column                      | Description                                                  |
+| --------------------------- | ------------------------------------------------------------ |
+| `ID`                        | A unique identifier for each bear instance.                  |
+| `Species`                   | The species of the bear.                                     |
+| `Body_Mass_kg`              | The body mass of the bear, measured in kilograms (kg).         |
+| `Shoulder_Hump_Height_cm`   | The height of the bear's shoulder hump, measured in centimeters (cm). |
+| `Claw_Length_cm`            | The length of the bear's claws, measured in centimeters (cm).  |
+| `Snout_Length_cm`           | The length of the bear's snout, measured in centimeters (cm).  |
+| `Forearm_Circumference_cm`  | The circumference of the bear's forearm, measured in centimeters (cm). |
+| `Ear_Length_cm`             | The length of the bear's ears, measured in centimeters (cm).   |
+
+2. Image Data (`images/` folder): The second portion is a collection of images, where each image corresponds to a unique ID from the tabular data (*e.g.* `ABB_01`, `EUR_01`, `GRZ_01` and `KDK_01`). This allows for visual analysis and the extraction of image-based features.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="25%">
+      <img src="images/ABB_01.png" alt="American Black Bear" width="200">
+      <b>
+        American Black Bear
+      </b>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <img src="images/EUR_01.png" alt="Eurasian Brown Bear" width="200">
+      <b>
+        Eurasian Brown Bear
+      </b>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <img src="images/GRZ_01.png" alt="Grizzly Bear" width="200">
+      <b>
+        Grizzly Bear
+      </b>
+    </td>
+    <td align="center" valign="top" width="25%">
+      <img src="images/KDK_01.png" alt="Kodiak Bear" width="200">
+      <b>
+        Kodiak Bear
+      </b>
+    </td>
+  </tr>
+</table>
+
 ## 🛠️ Key Technologies
 
 - **Snowpark**: Distributed data processing
