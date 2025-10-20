@@ -14,7 +14,7 @@ This project demonstrates how to build a complete machine learning project for c
 2. **[Part 2: Exploratory Data Analysis (EDA)](CHANINN_BEAR_FIRST_ML_PROJECT_PART_2_EDA.ipynb)** - Data exploration, visualization, and statistical analysis using `Altair` and `Streamlit`
 3. **[Part 3: Machine Learning](CHANINN_BEAR_FIRST_ML_PROJECT_PART_3_ML.ipynb)** - Model training with multiple algorithms (Logistic Regression, Random Forest, SVM) using `scikit-learn`
 4. **[Part 4: Experiment Tracking](CHANINN_BEAR_FIRST_ML_PROJECT_PART_4_EXPERIMENT_TRACKING.ipynb)** - Hyperparameter tuning and model comparison using Snowflake ML `ExperimentTracking`
-5. **Part 5: Data App** - Building a shareable `Streamlit` application for model deployment
+5. **[Part 5: Data App](CHANINN_BEAR_PREDICTION_APP.py)** - Building a shareable `Streamlit` application for model deployment
 
 ## 🎯 What learners will learn?
 
