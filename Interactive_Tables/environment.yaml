@@ -1,0 +1,6 @@
+name: app_environment
+channels:
+  - snowflake
+dependencies:
+  - matplotlib=*
+  - tabulate=*
