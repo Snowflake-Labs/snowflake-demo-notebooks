@@ -17,7 +17,7 @@ This demo shows how to:
 
 | File | Description |
 |------|-------------|
-| `build-business-ready-queries-with-snowflake-semantic-views.ipynb` | Interactive notebook with the complete demo |
+| [build-business-ready-queries-with-snowflake-semantic-views.ipynb](build-business-ready-queries-with-snowflake-semantic-views.ipynb) | Interactive notebook with the complete demo |
 
 ---
 
