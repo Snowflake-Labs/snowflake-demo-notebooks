@@ -1,4 +1,4 @@
-# Snowflake Semantic Views: From SQL to Semantic SQL
+# Build Business-Ready Queries with Snowflake Semantic Views
 
 Learn how to use **Snowflake Semantic Views** to simplify complex SQL queries and build business-ready analytics.
 
@@ -10,6 +10,15 @@ This demo shows how to:
 3. Write **simpler queries** that let Snowflake handle the complexity
 
 **The result?** Queries that are shorter, easier to read, and maintain the same analytical power.
+
+---
+
+## 📊 What You'll Learn
+
+- How Semantic Views simplify complex joins
+- Traditional SQL vs Semantic SQL (side-by-side comparisons)
+- Defining reusable metrics and dimensions
+- Query patterns from simple to complex
 
 ---
 
@@ -34,15 +43,6 @@ This demo shows how to:
 1. Open **Snowflake Notebooks** in your account
 2. Import `build-business-ready-queries-with-snowflake-semantic-views.ipynb`
 3. Run the cells to create the Semantic View and compare queries
-
----
-
-## 📊 What You'll Learn
-
-- How Semantic Views simplify complex joins
-- Traditional SQL vs Semantic SQL (side-by-side comparisons)
-- Defining reusable metrics and dimensions
-- Query patterns from simple to complex
 
 ---
 
