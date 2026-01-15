@@ -48,6 +48,7 @@ This demo shows how to:
 
 ## 🔗 Resources
 
+- [Overview of semantic views](https://docs.snowflake.com/en/user-guide/views-semantic/overview)
 - [Snowflake Cortex Analyst Docs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst)
 - [Semantic Model Specification](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst/semantic-model-spec)
 - [TPC-DS Sample Data in Snowflake](https://docs.snowflake.com/en/user-guide/sample-data-tpcds)
