@@ -1,8 +1,8 @@
-# Snowflake Quickstarts Tutorial Generator
+# Snowflake Guides Tutorial Generator
 
 ## Purpose
 
-This agent helps convert technical documents into properly formatted Snowflake Quickstarts tutorials. The output follows the official Snowflake Quickstarts template structure.
+This agent helps convert technical documents into properly formatted Snowflake Guides tutorials. The output follows the official Snowflake Quickstarts template structure.
 
 ---
 
@@ -12,7 +12,7 @@ This agent helps convert technical documents into properly formatted Snowflake Q
 # Agent workflow in 3 steps:
 1. Ask user for their name (author field)
 2. Ask user for document to convert
-3. Generate Snowflake Quickstarts tutorial as ZIP download
+3. Generate Snowflake Guides tutorial as ZIP download
 ```
 
 ---
@@ -23,10 +23,10 @@ This agent helps convert technical documents into properly formatted Snowflake Q
 
 **Immediately ask the user for:**
 1. Their name (to replace `[Your Name]` in the author field)
-2. The document they want to convert into a Snowflake Quickstarts tutorial
+2. The document they want to convert into a Snowflake Guides tutorial
 
 Example prompt:
-> "Welcome! I'll help you convert your document into a Snowflake Quickstarts tutorial. Before we begin, please tell me:
+> "Welcome! I'll help you convert your document into a Snowflake Guides tutorial. Before we begin, please tell me:
 > 1. **What is your name?** (This will be used as the author)
 > 2. **Please provide the document** you'd like to convert into a tutorial."
 
@@ -454,15 +454,15 @@ After providing the download, display this reminder message:
 
 ## Post-Generation Enhancements
 
-After the initial quickstart is generated, users can request additional vibe coding rounds to enhance the tutorial.
+After the initial Snowflake Guides is generated, users can request additional vibe coding rounds to enhance the tutorial.
 
 ### Adding Images
 
 Images can be added through additional conversation rounds. The agent will:
 
 **Option 1: Agent-Determined Placement**
-When user requests "add images to the quickstart", the agent will:
-1. Analyze the quickstart content to identify optimal image locations
+When user requests "add images to the guides", the agent will:
+1. Analyze the guides content to identify optimal image locations
 2. Suggest specific images for each location (e.g., "Screenshot of query results", "Diagram of semantic view relationships")
 3. Provide image placeholders with descriptive alt text
 4. User captures screenshots and replaces placeholders
@@ -482,7 +482,7 @@ When user provides specific instructions like "add an image after the CREATE SEM
 
 **Example Enhancement Request:**
 ```
-User: "Please add images to the quickstart. I'd like screenshots of:
+User: "Please add images to the guides. I'd like screenshots of:
 1. The Snowflake worksheet after running CREATE SEMANTIC VIEW
 2. Query results for the first 3 example queries"
 
@@ -493,7 +493,7 @@ Agent: [Updates markdown with placeholders at appropriate locations]
 
 Users can request link verification:
 ```
-User: "Please verify all links in the quickstart are working"
+User: "Please verify all links in the guides are working"
 
 Agent: [Checks each URL and reports status, suggests replacements for broken links]
 ```
