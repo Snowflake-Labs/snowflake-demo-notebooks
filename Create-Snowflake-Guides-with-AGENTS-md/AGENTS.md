@@ -444,12 +444,6 @@ build-business-ready-queries-with-snowflake-semantic-views/
 └── build-business-ready-queries-with-snowflake-semantic-views.md
 ```
 
-### Post-Generation Message
-
-After providing the download, display this reminder message:
-
-> ⚠️ **Important Reminder**: Don't forget to delete the `-` from all `-``` instances in your markdown file before publishing!
-
 ---
 
 ## Post-Generation Enhancements
