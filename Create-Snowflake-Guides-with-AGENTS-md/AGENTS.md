@@ -44,7 +44,7 @@ Example prompt:
    - Generates action-verb title
    - Creates congratulatory conclusion
 5. **Agent outputs** → ZIP file download with markdown
-6. **Agent reminds** → Message about removing `-` from code blocks
+6. **Agent outputs** → Complete markdown ready to use
 7. **Optional: Post-generation enhancements** (additional vibe coding rounds):
    - User requests image additions → Agent suggests placements or follows user instructions
    - User requests link verification → Agent checks all URLs and reports status
@@ -62,13 +62,13 @@ Example prompt:
 | Categories | Match from list + always include quickstart |
 | Prerequisites | Always include Snowflake account signup link first |
 | Headers | H2 for steps, H3 for substeps, never beyond H4 |
-| Code blocks | Inner ones use -``` |
+| Code blocks | Use standard ``` |
 | Content source | Document only - no external |
 | Images | Lowercase, hyphens, max 1MB, no HTML |
 | URL links | Verify all links work before finalizing |
 | Conclusion | Start with "Congratulations! You've successfully..." |
 | Output format | ZIP file download |
-| Final reminder | Tell user to remove `-` from -``` |
+| Final reminder | N/A |
 | Post-generation | Optional vibe coding rounds for images/enhancements |
 
 ---
@@ -141,9 +141,9 @@ feedback link: https://github.com/Snowflake-Labs/sfguides/issues
 ### [Setup Step 1 - e.g., Environment Configuration] 
 [Detailed instructions] 
 
--```[language] 
+```[language] 
 [code snippet if applicable] 
--``` 
+``` 
 
 ### [Setup Step 2 - e.g., Installation] 
 [Detailed instructions] 
@@ -158,9 +158,9 @@ feedback link: https://github.com/Snowflake-Labs/sfguides/issues
 ### [Subsection 1.1] 
 [Detailed explanation] 
 
--```[language] 
+```[language] 
 [code snippet if applicable] 
--``` 
+``` 
 
 ### [Subsection 1.2] 
 [Detailed explanation] 
@@ -374,9 +374,8 @@ The Prerequisites section MUST always include this as the first bullet point:
 
 ### Code Block Formatting
 
-- The **first** occurrence of ``` (at the very start of the document template) remains as ```
-- The **last** occurrence of ``` (at the very end of the document template) remains as ```
-- All **inner** occurrences of ``` must be written as -```
+- Use standard ``` for all code blocks
+- No special formatting required
 
 ### Conclusion Section Requirements
 
@@ -443,6 +442,10 @@ Instead:
 build-business-ready-queries-with-snowflake-semantic-views/
 └── build-business-ready-queries-with-snowflake-semantic-views.md
 ```
+
+### Post-Generation Message
+
+After providing the download, confirm the file is ready to use.
 
 ---
 
