@@ -23,4 +23,4 @@ You will build a complete, functioning interactive data environment in Snowflake
 
 # Step-By-Step Guide
 
-For prerequisites, environment setup, step-by-step guide and instructions, please refer to the [QuickStart Guide](https://www.snowflake.com/en/developers/guides/getting-started-with-interactive-tables/).
+For prerequisites, environment setup, step-by-step guide and instructions, please refer to the [QuickStart Guide](https://www.snowflake.com/en/developers/guides/getting-started-with-interactive-analytics/).
