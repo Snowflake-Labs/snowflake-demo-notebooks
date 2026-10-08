@@ -10,14 +10,21 @@ to Cortex Analyst and Cortex Agents, an approved compute pool for the app and
 optional notebook, and an enabled Cortex model for the optional suggestion cell.
 Warehouse, container compute and Cortex calls can incur charges.
 
-Run the SQL files in order in Snowsight Workspaces:
+The SQL files preserve the original guide's code, including its full semantic
+definitions, relationships, synonyms, example query and agent setup. The confirmed
+data-schema correction removes `JOB_LEVEL`, which is absent from the source CSV,
+from the table definition and HR queries. No compact replacement models are used.
+Run each file or its matching guide block once, not both.
 
-1. `sql/01_setup.sql`: create the dedicated lab resources and load public synthetic CSV data.
-2. `sql/02_semantic_views.sql`: create Finance, Sales and Marketing views.
-3. `sql/03_hr_baseline.sql`: create the reproducible HR view.
-4. `sql/04_semantic_query.sql`: query marketing metrics.
-5. Create a standalone Workspaces Streamlit app from `streamlit_app/streamlit_app.py`.
-6. `sql/05_agent.sql`: create the four-tool agent.
+Follow the guide's section order in Snowsight Workspaces (not filename numbering):
+
+1. Run [sql/01_setup.sql](sql/01_setup.sql) to create the lab resources and load data.
+2. Run [sql/02_semantic_views.sql](sql/02_semantic_views.sql) to create Finance, Sales and Marketing views.
+3. Run [sql/04_semantic_query.sql](sql/04_semantic_query.sql) at **Query Semantic Views**.
+4. Create `HR_SEMANTIC_VIEW` with Autopilot as described in the guide. Select `HR_EMPLOYEE_FACT`, `EMPLOYEE_DIM`, `DEPARTMENT_DIM`, `JOB_DIM` and `LOCATION_DIM`. [sql/03_hr_verified_queries.sql](sql/03_hr_verified_queries.sql) contains the original five reference queries to review and add in the wizard; it does not create an HR view. Select the lab warehouse when testing these queries.
+5. Complete or skip the optional enrichment workflow. The notebook below is a shorter alternative to the guide's detailed Python workflow.
+6. Create a standalone Workspaces Streamlit app from `streamlit_app/streamlit_app.py`. It requires the four views, not a notebook session.
+7. Run [sql/05_agent.sql](sql/05_agent.sql) to create the agent, then test it through the Agents interface. The file includes the original commented-out alternative unchanged; those comments do not execute.
 
 ## Sample data
 
@@ -30,22 +37,24 @@ the source datasets.
 
 The loader reads the source repository's `main` branch, so future contents and
 results may change. Check the COPY results and confirm all 20 tables contain data
-before continuing. Strict column validation and `ON_ERROR='ABORT_STATEMENT'`
-stop malformed loads rather than silently skipping records.
+before continuing. The original loader uses `ON_ERROR='CONTINUE'` and permissive
+column-count handling. Inspect rejected rows and COPY results; a successful
+statement alone does not prove that every row loaded.
 
 ## Optional companion notebook
 
-After completing the core steps, open [query_history_enrichment.ipynb](query_history_enrichment.ipynb)
-for the optional query-history extension. It reuses the lab data and HR baseline;
+After creating the HR view, open [query_history_enrichment.ipynb](query_history_enrichment.ipynb)
+for the optional query-history extension. It reuses the lab data and HR view;
 it does not create them or build the Streamlit app. You can skip it and proceed
 to cleanup without affecting the app or agent.
 
 Upload the notebook into Snowsight Workspaces and open it. Connect to a notebook
 service on an approved compute pool, then select the lab role and query warehouse,
 and run the first Python cell to check the connection. Then work through the
-remaining cells in order. The guide's beginner setup instructions and step-by-step
-explanations accompany this same notebook; you do not need to create a second one
-or copy its cells manually.
+remaining cells in order. This is partial coverage: a shorter alternative to the
+guide's original detailed enrichment workflow, not a cell-for-cell copy. Choose
+one workflow; do not run both. It generates its own query history and does not
+require earlier app or agent interactions.
 
 The four code cells connect to the lab, generate three tagged queries, retrieve
 their history and request review-only suggestions. The final Markdown cell
@@ -58,9 +67,11 @@ The source data has no job-level column. HR data represents repeated observation
 salary sums across dates are not payroll expense. Marketing links are synthetic
 associations, not proof of causal attribution.
 
-The SQL deliberately creates new top-level resources. Stop on name collisions.
-Never use this setup against existing production objects. Keep the app private
-until you have designed a read-only execution role and reviewed its access.
+The original SQL uses `CREATE OR REPLACE`, changes your user's default role and
+warehouse, grants PUBLIC access to its configuration schema, and creates the
+agent's network rule/external access integration. Review these statements and
+record your current defaults before running. Do not run against existing or
+production resources. Keep the app private until you have reviewed its access.
 
 ## Run and deploy the app
 
@@ -76,18 +87,13 @@ To deploy, select Deploy and use `SV_VHOL_DB.VHOL_SCHEMA`. Do not grant public a
 Shut down the notebook kernel and stop the app preview. Remove any deployed lab app.
 Delete only the lab's Workspaces files. Suspend a dedicated notebook service only
 after checking no other notebooks use it; leave shared compute pools untouched.
-Run the following only for resources created exclusively for this lab. If you
-changed resource names during setup, update them here too. Database removal also
-removes contained tables, views and the agent.
-
-```sql
-USE ROLE AGENTIC_ANALYTICS_VHOL_ROLE;
-DROP DATABASE SV_VHOL_DB;
-USE ROLE ACCOUNTADMIN;
-DROP INTEGRATION GIT_API_INTEGRATION;
-DROP WAREHOUSE AGENTIC_ANALYTICS_VHOL_WH;
-DROP ROLE AGENTIC_ANALYTICS_VHOL_ROLE;
-```
+Have the appropriate object owner remove only resources created exclusively for
+this lab: `SV_VHOL_DB` and its contents, `AGENTIC_ANALYTICS_VHOL` and its
+configuration schema, `Snowflake_intelligence_ExternalAccess_Integration`,
+`GIT_API_INTEGRATION`, `AGENTIC_ANALYTICS_VHOL_WH` and `AGENTIC_ANALYTICS_VHOL_ROLE`.
+Remove the external access integration before its referenced network rule/database.
+Restore the user defaults you recorded before deleting the lab role or warehouse.
+If any resource existed before the lab or is shared, do not remove it.
 
 Notebook services and personal Workspaces files are outside the database and
 require the separate cleanup described above.
@@ -95,7 +101,11 @@ require the separate cleanup described above.
 ## Files
 
 - `README.md`: run order, optional notebook, deployment and cleanup.
-- `sql/01_setup.sql` through `sql/05_agent.sql`: the five SQL steps listed above.
+- `sql/01_setup.sql`: original setup and data load with the missing-column fix.
+- `sql/02_semantic_views.sql`: original Finance, Sales and Marketing definitions.
+- `sql/03_hr_verified_queries.sql`: five original HR reference queries for Autopilot, with missing-column fixes.
+- `sql/04_semantic_query.sql`: original marketing semantic query.
+- `sql/05_agent.sql`: original agent setup, including its commented alternative.
 - `streamlit_app/streamlit_app.py`: standalone app.
 - `streamlit_app/README.md`: app setup notes.
 - `query_history_enrichment.ipynb`: optional four-code-cell extension.
